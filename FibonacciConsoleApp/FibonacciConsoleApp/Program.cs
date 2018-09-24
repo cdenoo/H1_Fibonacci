@@ -26,5 +26,10 @@ namespace FibonacciConsoleApp
             }
             return result;
         }
+
+        private static int[] FibonacciArray(int numberofvalues)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
