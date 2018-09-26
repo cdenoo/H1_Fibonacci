@@ -10,7 +10,7 @@ namespace FibonacciConsoleApp
     {
         public static void Main(string[] args)
         {
-            PrintIntegerArray(FibonacciArray(5));
+            Console.WriteLine("Version 1 result: {0}\nVersion 2 result: {1}", Fibonacci(5), FibonacciV2(5));
         }
 
         // Returns the fibonacci number on a given position
@@ -26,6 +26,12 @@ namespace FibonacciConsoleApp
                 index++;
             }
             return result;
+        }
+
+        private static int FibonacciV2(int position)
+        {
+            int[] fibArray = FibonacciArray(1000);
+            return fibArray[position-1];
         }
 
         // Returns an array (size numberofvalues) of fibonacci numbers
